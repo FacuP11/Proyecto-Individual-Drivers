@@ -6,9 +6,10 @@ module.exports = (sequelize) => {
   sequelize.define('Driver', {
     id: {
       type: DataTypes.UUID,
-      allowNull: false
+      allowNull: false,
+      primaryKey: true,
     },
-    name: {
+    nombre: {
       type: DataTypes.STRING,
       allowNull: false,
     },
